@@ -50,7 +50,7 @@ validate_credit_card/
 
 - Entrada do número do cartão de crédito.
 - Validação do número do cartão.
-- Identificação da bandeira do cartão (Visa, MasterCard, Elo, American Express, Discover, Hipercard, Desconhecida).
+- Identificação da bandeira do cartão (Visa, MasterCard, Elo, Diners Club, American Express, Discover, Hipercard, EnRoute, JCB, Voyager, Aura e Desconhecida).
 
 ## Exemplo de Uso
 
