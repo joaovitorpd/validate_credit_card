@@ -10,8 +10,14 @@ class CreditCardCubit extends Cubit<CreditCardModel?> {
   }
 
   String _getCardBrand(String number) {
+    number = number.replaceAll(' ', ''); // Remove espaços em branco
+
     if (number.startsWith('4')) {
-      return 'Visa';
+      if (number.length == 13 || number.length == 16) {
+        return 'Visa';
+      } else {
+        return 'Número de cartão Visa inválido';
+      }
     } else if (RegExp(r'^(5[1-5]|2[2-7])').hasMatch(number)) {
       return 'MasterCard';
     } else if (RegExp(r'^(4011|4312|4389)').hasMatch(number)) {
@@ -24,6 +30,16 @@ class CreditCardCubit extends Cubit<CreditCardModel?> {
       return 'Discover';
     } else if (number.startsWith('6062')) {
       return 'Hipercard';
+    } else if (RegExp(r'^(36|38|30[0-5])').hasMatch(number)) {
+      return 'Diners Club';
+    } else if (RegExp(r'^(35)').hasMatch(number)) {
+      return 'JCB';
+    } else if (RegExp(r'^(2014|2149)').hasMatch(number)) {
+      return 'EnRoute';
+    } else if (number.startsWith('8699')) {
+      return 'Voyager';
+    } else if (RegExp(r'^(50)').hasMatch(number)) {
+      return 'Aura';
     } else {
       return 'Desconhecida';
     }
