@@ -19,10 +19,14 @@ validate_credit_card/
 │   └── models/
 │       └── credit_card_model.dart
 ├── test/
-│   ├── credit_card_view_test.dart
-│   ├── credit_card_form_test.dart
-│   ├── credit_card_cubit_test.dart
-│   └── credit_card_model_test.dart
+│   ├── models/
+│   │   └── credit_card_model_test.dart
+│   ├── view/
+│   │   └── credit_card_view_test.dart
+│   ├── viewmodels/
+│   │   └── credit_card_cubit_test.dart
+│   └── widgets/
+│       └── credit_card_form_test.dart
 └── README.md
 ```
 
