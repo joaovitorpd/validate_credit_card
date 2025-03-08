@@ -1,8 +1,8 @@
 # Validar Cartão
 
-Este projeto é desenvolvido por [João Vitor Pires Dias](mailto:joaovitorpd@gmail.com).
+Desenvolvido por [João Vitor Pires Dias](mailto:joaovitorpd@gmail.com).
 
-Este projeto é uma aplicação Flutter para validar cartões de crédito. Ele identifica a bandeira do cartão com base no número fornecido.
+Este projeto é um app feito em Flutter como desafio no **Bootcamp Microsoft AI for Tech - GitHub Copilot**. Este app valida cartões de crédito e identifica a bandeira.
 
 ## Estrutura do Projeto
 
