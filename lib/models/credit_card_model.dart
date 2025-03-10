@@ -1,8 +1,10 @@
+import 'package:equatable/equatable.dart';
+
 /// A classe [CreditCardModel] representa um cartão de crédito com seu número e bandeira.
 ///
 /// Esta classe é usada para armazenar as informações do cartão de crédito, incluindo
 /// o número do cartão e a bandeira (Visa, MasterCard, etc.).
-class CreditCardModel {
+class CreditCardModel extends Equatable {
   /// O número do cartão de crédito.
   final String number;
 
@@ -15,5 +17,8 @@ class CreditCardModel {
   ///
   /// - [number]: O número do cartão de crédito.
   /// - [brand]: A bandeira do cartão de crédito.
-  CreditCardModel({required this.number, required this.brand});
+  const CreditCardModel({required this.number, required this.brand});
+
+  @override
+  List<Object?> get props => [number, brand];
 }

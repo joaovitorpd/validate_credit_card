@@ -4,6 +4,8 @@ import '../viewmodels/credit_card_cubit.dart';
 import '../widgets/credit_card_form.dart';
 
 class CreditCardView extends StatelessWidget {
+  const CreditCardView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

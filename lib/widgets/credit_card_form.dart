@@ -4,8 +4,10 @@ import 'package:validate_credit_card/models/credit_card_model.dart';
 import '../viewmodels/credit_card_cubit.dart';
 
 class CreditCardForm extends StatefulWidget {
+  const CreditCardForm({super.key});
+
   @override
-  _CreditCardFormState createState() => _CreditCardFormState();
+  State<CreditCardForm> createState() => _CreditCardFormState();
 }
 
 class _CreditCardFormState extends State<CreditCardForm> {
