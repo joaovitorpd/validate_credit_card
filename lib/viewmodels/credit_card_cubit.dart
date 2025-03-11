@@ -12,16 +12,18 @@ class CreditCardCubit extends Cubit<CreditCardModel?> {
   String _getCardBrand(String number) {
     number = number.replaceAll(' ', ''); // Remove espaços em branco
 
-    if (number.startsWith('4')) {
+    if (RegExp(
+            r'^(4011|4312|4389|4514|4576|5041|5066|5067|5090|6277|6362|6363|6504|6505|6506|6507|6509|6516|6550)')
+        .hasMatch(number)) {
+      return 'Elo';
+    } else if (RegExp(r'^(5[1-5]|2[2-7])').hasMatch(number)) {
+      return 'MasterCard';
+    } else if (number.startsWith('4')) {
       if (number.length == 13 || number.length == 16) {
         return 'Visa';
       } else {
         return 'Número de cartão Visa inválido';
       }
-    } else if (RegExp(r'^(5[1-5]|2[2-7])').hasMatch(number)) {
-      return 'MasterCard';
-    } else if (RegExp(r'^(4011|4312|4389)').hasMatch(number)) {
-      return 'Elo';
     } else if (number.startsWith('34') || number.startsWith('37')) {
       return 'American Express';
     } else if (number.startsWith('6011') ||

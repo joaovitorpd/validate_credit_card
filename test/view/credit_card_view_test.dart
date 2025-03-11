@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:validate_credit_card/viewmodels/credit_card_cubit.dart';
 
 void main() {
-  testWidgets('CreditCardView should render AppBar and BlocProvider',
+  testWidgets('CreditCardView deve renderizar AppBar e BlocProvider',
       (WidgetTester tester) async {
     await tester.pumpWidget(MaterialApp(
       home: CreditCardView(),

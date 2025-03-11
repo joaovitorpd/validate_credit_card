@@ -3,7 +3,7 @@ import 'package:validate_credit_card/models/credit_card_model.dart';
 
 void main() {
   group('CreditCardModel', () {
-    test('should create a CreditCardModel instance with correct values', () {
+    test('deve criar uma instância CreditCardModel com valores corretos', () {
       const number = '4111111111111111';
       const brand = 'Visa';
 
@@ -13,7 +13,7 @@ void main() {
       expect(creditCard.brand, equals(brand));
     });
 
-    test('props should contain number and brand', () {
+    test('os adereços devem conter número e marca', () {
       const number = '4111111111111111';
       const brand = 'Visa';
 
