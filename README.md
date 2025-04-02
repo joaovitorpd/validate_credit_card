@@ -1,10 +1,10 @@
-# Validar Cartão
+# Validate Credit Card
 
-Desenvolvido por [João Vitor Pires Dias](mailto:joaovitorpd@gmail.com).
+Developed by [João Vitor Pires Dias](mailto:joaovitorpd@gmail.com).
 
-Este projeto é um app feito em Flutter como desafio no **Bootcamp Microsoft AI for Tech - GitHub Copilot**. Este app valida cartões de crédito e identifica a bandeira.
+This project is a Flutter app created as a challenge in the **Bootcamp Microsoft AI for Tech - GitHub Copilot**. This app validates credit cards and identifies their brand.
 
-## Estrutura do Projeto
+## Project Structure
 
 ```plaintext
 validate_credit_card/
@@ -30,38 +30,39 @@ validate_credit_card/
 └── README.md
 ```
 
-### Arquivos Principais
+### Main Files
 
-- **main.dart**: Ponto de entrada da aplicação. Configura o tema e define a tela inicial.
-- **views/credit_card_view.dart**: Define a interface principal da aplicação.
-- **widgets/credit_card_form.dart**: Contém o formulário para entrada do número do cartão e exibição da bandeira.
-- **viewmodels/credit_card_cubit.dart**: Gerencia o estado da aplicação e valida o número do cartão.
-- **models/credit_card_model.dart**: Define a classe `CreditCardModel` que representa um cartão de crédito.
+- **main.dart**: Application entry point. Configures the theme and defines the initial screen.
+- **views/credit_card_view.dart**: Defines the main interface of the application.
+- **widgets/credit_card_form.dart**: Contains the form for entering the card number and displaying the brand.
+- **viewmodels/credit_card_cubit.dart**: Manages the application state and validates the card number.
+- **models/credit_card_model.dart**: Defines the `CreditCardModel` class that represents a credit card.
 
-## Como Executar
+## How to Run
 
-1. Certifique-se de ter o Flutter instalado em sua máquina.
-2. Clone este repositório.
-3. Navegue até o diretório do projeto.
-4. Execute `flutter pub get` para instalar as dependências.
-5. Execute `flutter run` para iniciar a aplicação.
+1. Make sure Flutter is installed on your machine.
+2. Clone this repository.
+3. Navigate to the project directory.
+4. Run `flutter pub get` to install dependencies.
+5. Run `flutter run` to start the application.
 
-## Funcionalidades
+## Features
 
-- Entrada do número do cartão de crédito.
-- Validação do número do cartão.
-- Identificação da bandeira do cartão (Visa, MasterCard, Elo, Diners Club, American Express, Discover, Hipercard, EnRoute, JCB, Voyager, Aura e Desconhecida).
+- Input for the credit card number.
+- Validation of the card number.
+- Identification of the card brand (Visa, MasterCard, Elo, Diners Club, American Express, Discover, Hipercard, EnRoute, JCB, Voyager, Aura, and Unknown).
 
-## Exemplo de Uso
+## Usage Example
 
-1. Digite o número do cartão no campo de texto.
-2. Clique no botão "Validar".
-3. A bandeira do cartão será exibida abaixo do botão.
+1. Enter the card number in the text field.
+2. Click the "Validate" button.
+3. The card brand will be displayed below the button.
 
-## Contribuição
+## Contribution
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Contributions are welcome! Feel free to open issues and pull requests.
 
-## Licença
+## License
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more details.
+
